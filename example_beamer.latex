@@ -1,0 +1,109 @@
+\documentclass{beamer}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{subfig}
+
+%FIRST FRAME
+\usetheme{Warsaw}
+\usecolortheme{crane}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\title{Titolo esame telerilevamento}
+\subtitle{sottotitolo personalizzato}
+\author{Ludovico Chieffallo}
+\date{18/03/2022}
+\institute{Alma Mater Studiorum, Università di Bologna\\
+\bigskip
+\includegraphics[width=0.5\textwidth]{unibo.png}
+}
+
+
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\AtBeginSection[]
+{
+\begin{frame}{outline}
+\tableofcontents[currentsection,currentsection,currentsectio]
+    
+\end{frame}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+\begin{frame}{titolo del frame}
+Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{primo capitolo}   
+\begin{frame}{formula}
+bsdbcbjhbchbdchjbh
+\begin{equation}
+    NDSI=\frac{green-swir}{green+swir}
+\end{equation}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{elenco puntato}
+\begin{itemize}
+    \item <1-> item1  %possiamo usare semplicemente \pause
+    \item <2-> item2 
+    \item <3-> item3
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{code}
+\subsection{sottosezioen}
+
+\begin{frame}{codice r}
+\tiny \lstinputlisting[language=R]{prova.txt}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{imagini}
+
+\begin{frame}{immagini varie}
+ 
+\begin{itemize}
+ 
+\item Some text
+
+\bigskip
+    
+\begin{figure}
+    \centering
+    \subfloat[]{\includegraphics[width=.4\linewidth]{fuji2013.jpg}}\qquad
+    \subfloat[]{\includegraphics[width=.4\linewidth]{fuji2021.jpg}}
+    \caption{decidi tu cosa scrivere}
+    \label{fig:my_label}
+    
+\end{figure}
+\end{itemize}
+    
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%possiamo anche fare così per le immagini
+\section{immagini2}
+\begin{frame}{immagini varie 2}
+
+some text here for start to talkling about 
+    
+\centering
+\includegraphics[width=.4\linewidth]{fuji2013.jpg}
+\includegraphics[width=.4\linewidth]{fuji2021.jpg}
+
+ \end{frame}
+
+
+\end{document}
